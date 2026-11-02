@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmailTriage – Privacy Policy</title>
+</head>
+<body>
+  <h1>EmailTriage Privacy Policy</h1>
+  <p><em>Last updated: 2 November 2026</em></p>
+
+  <p>EmailTriage is a personal, local-first application built and used by its developer
+     to triage their own Gmail inbox. It is not offered to the public.</p>
+
+  <h2>Data accessed</h2>
+  <p>EmailTriage requests a single Google OAuth scope:
+     <code>https://www.googleapis.com/auth/gmail.readonly</code>. This allows it to read
+     email messages and metadata (sender, subject, date, body). It cannot send, delete,
+     or modify any email.</p>
+
+  <h2>How data is used</h2>
+  <p>Emails are read only to classify their importance. Classification is performed
+     entirely on the user's own computer by a locally running language model. Email
+     content is never sent to any external AI service or third-party server.</p>
+
+  <h2>How data is stored</h2>
+  <ul>
+    <li>OAuth tokens are stored on the user's own computer, encrypted using
+        ASP.NET Core Data Protection, and are never written in plain text.</li>
+    <li>Classification results and limited email metadata may be stored in a local
+        database on the same computer. Nothing is stored on any remote server operated
+        by EmailTriage.</li>
+  </ul>
+
+  <h2>How data is shared</h2>
+  <p>Data is not sold, rented, or shared with anyone. The only data that leaves the
+     user's computer is a short alert for important emails (such as the sender, subject,
+     and a brief summary), sent to the user's own Telegram account via the Telegram Bot API.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>EmailTriage's use and transfer of information received from Google APIs adheres to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+     Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be revoked at any time at
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+     Deleting the local token files and database removes all stored data.</p>
+
+  <h2>Contact</h2>
+  <p>Questions can be raised via the project's GitHub repository.</p>
+
+  <p><a href="index.html">Back to home</a></p>
+</body>
+</html>
